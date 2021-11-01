@@ -75,7 +75,17 @@ namespace OffsetEditor
                         List<string> listOfFiles = FileList.SelectedItems.Cast<string>().ToList();
                         decimal offset = decimal.Parse(textboxOffset.Text);
                         List<string> failedFiles = chartFileHandler.ApplyOffset(listOfFiles, offset);
-                        MessageBox.Show(string.Format("Offset applied. Failed to apply offset to {0} files.", failedFiles.Count));
+                        MessageBox.Show(string.Format("Offset applied to {0} files.", listOfFiles.Count - failedFiles.Count));
+                        if (failedFiles.Count > 0)
+                        {
+                            string failedFilesMsg = "Files that encountered an error:\n";
+                            foreach (string f in failedFiles)
+                            {
+                                failedFilesMsg += f + "\n";
+                            }
+
+                            MessageBox.Show(failedFilesMsg);
+                        }
                     }
                 }
                 else
