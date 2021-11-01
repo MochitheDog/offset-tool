@@ -51,9 +51,16 @@ namespace OffsetEditor
                         failedFiles.Add(path);
                         continue;
                     }
-                    
-                    // Copy original file as backup
-                    File.Copy(path, string.Format("{0}.OLDOFFSET", path));
+
+                    string backupPath = path + ".OLDOFFSET";
+                    string backupPathAppend = backupPath;
+                    int backupNumber = 1;
+                    while (File.Exists(backupPathAppend))
+                    {
+                        backupNumber++;
+                        backupPathAppend = backupPath + backupNumber.ToString();
+                    }
+                    File.Copy(path, backupPathAppend);
 
                     // Offset parsing - read file
                     // SSCs may have multiple #OFFSET:'s
