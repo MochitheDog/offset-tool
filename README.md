@@ -1,3 +1,5 @@
+![offset tool screenshot](https://user-images.githubusercontent.com/14947235/139633921-6adb49e7-4999-4674-bcaf-6b31a01852c5.png)
+
 # Offset Tool
 Offset Tool is a GUI application to easily edit the music offsets of StepMania chart files (.sm and .ssc). Entire folders and subfolders of files can be edited, as well as single files.
 Offset Tool will also automatically create backups of your files in case of mistakes.
