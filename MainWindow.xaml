@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OffsetEditor"
         mc:Ignorable="d"
-        Title="OffsetTool v1.0" Height="500" Width="800" MinWidth="800" MinHeight="500">
+        Title="OffsetTool v1.0.1" Height="500" Width="800" MinWidth="800" MinHeight="500">
 
     <Grid>
         <Grid.ColumnDefinitions>

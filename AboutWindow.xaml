@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OffsetEditor"
         mc:Ignorable="d"
-        Title="About" Height="450" Width="400" MaxWidth="400" MaxHeight="450" MinWidth="400" MinHeight="450">
+        Title="About" Height="400" Width="400" MaxWidth="400" MaxHeight="400" MinWidth="400" MinHeight="400">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="93*"/>
@@ -15,9 +15,8 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock HorizontalAlignment="Center" Margin="0,186,0,0" Text="CHANGELOG&#xD;&#xA;&#xD;&#xA;2021-10-31&#xD;&#xA;Initial version." TextWrapping="Wrap" VerticalAlignment="Top" Width="344" Height="173" Grid.RowSpan="2"/>
-        <Button Content="Close" HorizontalAlignment="Left" Margin="323,109,0,0" Grid.Row="1" VerticalAlignment="Top" Width="49" Click="CloseButtonClick"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="153" Width="344"><Run Text="OffsetTool"/><LineBreak/><Run Text="v1.0"/><LineBreak/><Run Text="by Aaron C"/>
+        <Button Content="Close" HorizontalAlignment="Center" Margin="0,92,0,0" Grid.Row="1" VerticalAlignment="Top" Width="57" Click="CloseButtonClick"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="240" Width="344"><Run Text="OffsetTool"/><LineBreak/><Run Text="v1.0.1"/><LineBreak/><Run Text="by Aaron C"/>
             <Hyperlink NavigateUri="https://github.com/MochitheDog/offset-tool"
                 RequestNavigate="Hyperlink_RequestNavigate">
                 (https://github.com/MochitheDog/offset-tool)
